@@ -1,1 +1,1 @@
-# NN-vanilla_numpy
+# Vanilla Neural Network
