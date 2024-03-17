@@ -1,4 +1,4 @@
-# Stock Market PRedictor
+# Stock Market Predictor
 
 ## Aim of the Project
 * To make an LSTM model that can be used to predict the movement and explore it's accuracy.
