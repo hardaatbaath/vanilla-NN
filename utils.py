@@ -111,6 +111,42 @@ def add_technical_indicators(new_df):
     # obv = talib.OBV(df['Adj Close'], df['Volume'])
     # ema = talib.EMA(df['Adj Close'])
 
+    #import pandas as pd
+    # import talib
+
+    # # Load the data
+    # stock_df = pd.read_csv('BAJFINANCE.csv')
+
+    # # Calculate technical indicators
+    # new_df = pd.DataFrame()
+    # new_df['Close'] = stock_df['Close']
+    # new_df['High'] = stock_df['High']
+    # new_df['Low'] = stock_df['Low']
+    # new_df['Open'] = stock_df['Open']
+
+    # # Calculate RSI
+    # new_df['RSI'] = talib.RSI(new_df['Close'])
+
+    # # Calculate BBANDS
+    # upper, middle, lower = talib.BBANDS(new_df['Close'])
+    # new_df['BBANDS_Upper'] = upper
+    # new_df['BBANDS_Middle'] = middle
+    # new_df['BBANDS_Lower'] = lower
+
+    # # Calculate MACD
+    # macd, signal, _ = talib.MACD(new_df['Close'])
+    # new_df['MACD'] = macd
+    # new_df['SIGNAL'] = signal
+
+    # # Calculate OBV
+    # new_df['OBV'] = talib.OBV(new_df['Close'], stock_df['Volume'])
+
+    # # Calculate EMA
+    # new_df['EMA'] = talib.EMA(new_df['Close'])
+
+    # print(new_df.head())
+
+
     new_df['Exponential_moving_average'] = ema.copy()
 
     #Adding of features to the dataframe
